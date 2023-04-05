@@ -7,8 +7,8 @@ MODEL = "gpt-3.5-turbo"
 USER = "Sitri"
 AI = "Pippa"
 TOKEN_LIMIT = 1000
-API_PATH = "C:/Users/nguye/Desktop/Repository/Pippa/doc/API_key.json"
-PROMPTS_PATH = "C:/users/nguye/Desktop/Repository/Pippa/doc/prompts.json"
+API_PATH = #API JSON File path
+PROMPTS_PATH = #JSON File to your system prompt
 
 def generate_response(prompt):  
     OPENAI_API_KEY = json.load(open(API_PATH))["openai"]
@@ -46,7 +46,7 @@ def num_tokens_from_messages(messages, model=MODEL):
         raise NotImplementedError(f"""num_tokens_from_messages() is not presently implemented for model {model}.""")
 
 def init():
-    p = subprocess.Popen(os.path.abspath("C:/Users/nguye/ai-voice-cloning/start.bat"),stdin=subprocess.PIPE, cwd ="C:/Users/nguye/ai-voice-cloning", creationflags=CREATE_NEW_CONSOLE)
+    p = subprocess.Popen(os.path.abspath("mrq/ai-voice-cloning path"),stdin=subprocess.PIPE, cwd ="mrq/ai-voice-cloning path", creationflags=CREATE_NEW_CONSOLE)
 
 def run(control = True, model : str = "Tortoise", voice : bool = True ):
     promptInp = json.load(open(PROMPTS_PATH))["Schizo_Pippa"]
