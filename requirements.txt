@@ -1,0 +1,14 @@
+git+https://github.com/openai/whisper.git
+git clone https://git.ecker.tech/mrq/ai-voice-cloning
+
+torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu118
+openai 
+json
+tiktoken
+time
+subprocess
+elevenlabslib
+requests
+winsound
+speech_recognition
+colorama
