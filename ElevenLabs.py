@@ -1,7 +1,7 @@
 from elevenlabslib import *
 import json
 
-API_PATH_2 = "C:/Users/nguye/Desktop/Repository/Pippa/doc/API_key.json"
+API_PATH_2 = #put your API json file here, or just leave this blank and directly add API in user API call.
 user  = ElevenLabsUser(json.load(open(API_PATH_2))["eleven"])
 voice = user.get_voices_by_name("Pippa")[0]
 
