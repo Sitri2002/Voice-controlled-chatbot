@@ -7,8 +7,8 @@ MODEL = "gpt-3.5-turbo"
 USER = "Sitri"
 AI = "Pippa"
 TOKEN_LIMIT = 1000
-API_PATH = #API JSON File path
-PROMPTS_PATH = #JSON File to your system prompt
+API_PATH = "" #API JSON File path
+PROMPTS_PATH = ""#JSON File to your system prompt
 
 def generate_response(prompt):  
     OPENAI_API_KEY = json.load(open(API_PATH))["openai"]
